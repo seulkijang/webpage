@@ -10,6 +10,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: green;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -38,8 +39,16 @@ nav {
   font-size: 14px;
 }
 
+.nav-links :hover {
+  color: pink;
+  text-decoration: underline;
+}
 .burger {
   display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }
 .burger div {
   width: 25px;
@@ -60,20 +69,23 @@ nav {
     /* overflow-x: hidden; */
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    top: 0px;
+    height: 100%;
     background-color: purple;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.1s ease-in;
+    z-index: 2;
   }
   .nav-link li {
+    display: block;
     opacity: 0;
+    right: 0;
   }
   .burger {
     display: block;
@@ -84,7 +96,7 @@ nav {
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade {
+/* @keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(40px);
@@ -93,7 +105,8 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */
+/* 메뉴 각각 포지션 */
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
