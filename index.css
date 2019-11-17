@@ -34,7 +34,8 @@ button {
   display: none;
   color: white;
 }
-button:hover, :hover:active {
+button:hover,
+button:hover:active  {
   background-color: white;
   color: black;
   transition: 0.5s all;
