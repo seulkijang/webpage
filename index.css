@@ -35,11 +35,7 @@ button {
   color: white;
 }
 button:hover,
-<<<<<<< HEAD
 button:hover:active {
-=======
-button:hover:active  {
->>>>>>> c2acf7f130382fd238881021267f5f21e4f6fb0a
   background-color: white;
   color: black;
   transition: 0.5s all;
