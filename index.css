@@ -105,7 +105,7 @@ section {
   font-size: 0.7rem;
   letter-spacing: 8px;
   text-transform: uppercase;
-  width: 300px;
+  width: 100%;
   transform: translate(-50%, -50%);
   transition: all 0.5s;
 }
@@ -139,6 +139,7 @@ section {
 
 .overwork-text {
   line-height: 30px;
+  width: 100%;
 }
 .overwork-text > p {
   padding-top: 20px;
@@ -197,7 +198,7 @@ section {
   position: absolute;
   left: -40px;
   top: -10px;
-  width: 100%;
+  width: 1180px;
   text-align: center;
   line-height: 150px;
   padding: 30px;
@@ -205,7 +206,7 @@ section {
 
 .work1 {
   background-image: url("https://i.stack.imgur.com/qsWBr.png");
-  width: 400px;
+  width: 500px;
   height: 120%;
 }
 .work2 {
